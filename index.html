@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#20251b">
+  <meta name="description" content="Badesa Empapelados. Explorá tramas y probá cómo cambia una habitación con el simulador de pared. En Asunción desde 1977.">
+  <meta property="og:title" content="Badesa Empapelados · Probá un cambio de pared">
+  <meta property="og:description" content="Probá distintas tramas en la misma habitación y encontrá el estilo para tu espacio.">
+  <title>Badesa Empapelados · La pared hace el ambiente</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="portada.webp">
+  <link rel="icon" href="marca.png">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="wrap nav">
+      <a href="#inicio" class="brand" aria-label="Badesa Empapelados, inicio">
+        <img src="marca.png" width="180" height="153" alt="">
+        <span>BADESA<small>EMPAPELADOS</small></span>
+      </a>
+      <nav aria-label="Menú principal">
+        <a href="#probador">Probador</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#visitanos">Visitanos</a>
+      </nav>
+      <a href="https://wa.me/595983347830" class="nav-contact" target="_blank" rel="noopener">Consultar <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-image" width="1536" height="1024" src="portada.webp" alt="" fetchpriority="high">
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Empapelados en Asunción <span>·</span> Desde 1977</p>
+          <h1 id="hero-title">La pared hace <em>el ambiente.</em></h1>
+          <p class="hero-summary">Un empapelado puede cambiar cómo se siente un espacio. Probá distintos diseños sobre la misma pared.</p>
+          <a class="pill hero-action" href="#probador">Probar en una pared <span aria-hidden="true">↓</span></a>
+        </div>
+        <span class="hero-note">Ambiente ilustrativo</span>
+      </div>
+    </section>
+
+    <section class="wrap studio-section" id="probador" aria-labelledby="studio-title">
+      <div class="studio-heading">
+        <div><p class="eyebrow">Probador de empapelados</p><h2 id="studio-title">Vestí la pared.</h2></div>
+        <p>Elegí una trama y deslizá la barra de la foto para comparar el antes y el después.</p>
+      </div>
+      <div class="studio">
+        <div class="viewer">
+          <div class="scene" id="scene" data-style="botanico">
+            <img class="room" width="1200" height="800" src="estudio.webp" alt="Sala de ejemplo con sillón color caramelo y banco de madera" decoding="async">
+            <div class="after" aria-hidden="true">
+              <img class="room" width="1200" height="800" src="estudio.webp" alt="">
+              <div class="wall"></div>
+            </div>
+            <span class="scene-tag tag-after" aria-hidden="true">Con papel</span>
+            <span class="scene-tag tag-before" aria-hidden="true">Pared original</span>
+            <div class="divider" aria-hidden="true"><span>‹ ›</span></div>
+            <input class="compare-slider" id="compare" type="range" min="0" max="100" value="62" aria-label="Porcentaje de pared con papel">
+          </div>
+          <div class="compare-bar">
+            <span class="preview-note">Ambiente y muestras ilustrativos</span>
+            <div class="compare-actions" role="group" aria-label="Vista de la habitación">
+              <button type="button" data-split="0" aria-pressed="false">Antes</button>
+              <button type="button" data-split="62" aria-pressed="true">Comparar</button>
+              <button type="button" data-split="100" aria-pressed="false">Después</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="treatments">
+          <h3>Elegí una trama</h3>
+          <div id="designs" class="designs" role="group" aria-label="Diseños de ejemplo">
+            <button class="design" type="button" data-design="botanico" aria-pressed="true">
+              <span class="swatch swatch-botanico"></span><span>Botánico<small>Oliva</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="design" type="button" data-design="textil" aria-pressed="false">
+              <span class="swatch swatch-textil"></span><span>Textil<small>Lino</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="design" type="button" data-design="arcos" aria-pressed="false">
+              <span class="swatch swatch-arcos"></span><span>Arcos<small>Arcilla</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="design" type="button" data-design="relieve" aria-pressed="false">
+              <span class="swatch swatch-relieve"></span><span>Relieve<small>Perla</small></span><span class="check" aria-hidden="true">✓</span>
+            </button>
+          </div>
+          <p id="style-note" class="style-note" aria-live="polite">Hojas en verde oliva para darle profundidad al ambiente.</p>
+          <a class="pill style-cta" id="design-contact" href="https://wa.me/595983347830" target="_blank" rel="noopener">Consultar por este estilo <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <noscript><p>Activá JavaScript para cambiar los diseños y usar el comparador.</p></noscript>
+    </section>
+
+    <section id="coleccion" class="collection" aria-labelledby="collection-title">
+      <div class="wrap collection-layout">
+        <div class="collection-photo">
+          <img src="hebra.webp" width="920" height="660" alt="Detalle ilustrativo de un papel de pared con textura de lino junto a muestras dobladas" loading="lazy">
+          <span>Imagen ilustrativa</span>
+        </div>
+        <div class="collection-copy">
+          <p class="eyebrow">Colección destacada</p>
+          <h2 id="collection-title">Hebra</h2>
+          <p>Inspirada en los tejidos. La colección reúne diseños lisos, motivos orgánicos y patrones geométricos con acabados sutiles.</p>
+          <div class="collection-links">
+            <a href="#probador" id="try-textile">Probar una trama textil <span aria-hidden="true">↗</span></a>
+            <a href="https://wa.me/595983347830?text=Hola%2C%20Badesa.%20Me%20gustar%C3%ADa%20ver%20el%20cat%C3%A1logo%20de%20la%20colecci%C3%B3n%20Hebra." target="_blank" rel="noopener">Pedir catálogo Hebra <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visitanos" class="wrap visit" aria-labelledby="visit-title">
+      <div><p class="eyebrow">Badesa en Asunción</p><h2 id="visit-title">La textura se elige <em>de cerca.</em></h2></div>
+      <div class="visit-info">
+        <p>Vení a ver las muestras en persona y compará los tonos y las texturas.</p>
+        <address>Manduvira 668, Asunción<br><span>Zona Universidad Autónoma de Asunción</span></address>
+        <div class="visit-actions">
+          <a class="pill" href="https://www.google.com/maps/search/?api=1&amp;query=Badesa%20Empapelados%20Manduvira%20668%20Asunci%C3%B3n" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+          <a href="tel:+595983347830">0983 347830</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#inicio" aria-label="Badesa Empapelados, volver al inicio"><img src="marca.png" width="180" height="153" alt=""><span>BADESA<small>EMPAPELADOS</small></span></a>
+      <p>Muestra visual preparada por NovaTec</p>
+      <a class="footer-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
